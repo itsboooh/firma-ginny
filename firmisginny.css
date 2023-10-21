@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+.gwbsig {
+    width: 220px;
+    height: 180px;
+    margin: auto;
+    border: 1px solid #cfcfcf;
+    overflow: hidden;
+    position: relative;
+    outline: 8px solid #646a74;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 1s;
+}
+
+.gwbsigi {
+    width: 220px;
+    height: 180px;
+    background: url(https://i.imgur.com/gdfB4It.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform ease-in-out 1.4s;
+}
+
+.hovergins {
+    width: 220px;
+    height: 180px;
+    background: url(https://i.imgur.com/VWTm0X6.png);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: transform ease-in-out 1.4s;
+}
+
+.sigtext {
+    width: 160px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 7px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 9px;
+    text-shadow: 1px 1px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.sigtext b {
+    background: linear-gradient(to right, #646a74, #646a74) !important;
+    color: #e0e0e0 !important;
+    text-shadow: 1px 1px #000;
+}
+
+.dark-mode .sigtext b {
+    background: linear-gradient(to right, #646a74, #424649) !important;
+    color: #e0e0e0 !important;
+    text-shadow: 1px 1px #000;
+}
+
+.gwbsig:hover .gwbsigi {
+    transform: translateX(-100%);
+}
+
+.gwbsig:hover .hovergins {
+    transform: translateX(0);
+}
